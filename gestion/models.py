@@ -3,8 +3,8 @@ from django.db import models
 # Create your models here.
 
 class Tareas(models.Model):
-    estados = [{'Terminado':'Tarea completa'},
-               {'incompleto':'Tarea pendiente'}
+    estados = [{'terminado':'tarea completa'},
+               {'incompleto':'tarea pendiente'}
                ]              
     titulo = models.CharField(max_length=100)
     descripcion = models.TextField(max_length=500)
