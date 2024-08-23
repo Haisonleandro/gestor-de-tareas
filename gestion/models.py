@@ -8,7 +8,7 @@ class Tareas(models.Model):
                ]              
     titulo = models.CharField(max_length=100)
     descripcion = models.TextField(max_length=500)
-    estado = models.CharField(choices=estados,default='incompleto')
+    estado = models.CharField(max_length=100,choices=estados,default='incompleto')
     def __str__(self):
         return self.titulo
 
